@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CancelBookingView" customModule="PassengerApp" customModuleProvider="target">
+            <connections>
+                <outlet property="arrowImgView" destination="wbQ-X0-UsZ" id="mcx-hu-z3Y"/>
+                <outlet property="cancelBookingHLbl" destination="DoF-mR-aNa" id="oUL-5U-7Wt"/>
+                <outlet property="enterReason" destination="oK5-uy-Mcs" id="TW7-fw-Hq2"/>
+                <outlet property="negativeLbl" destination="xrh-fD-ZKt" id="qA3-wP-6Zm"/>
+                <outlet property="optionLbl" destination="jyO-zM-ovs" id="bc7-FH-ZXs"/>
+                <outlet property="optionView" destination="tEZ-Ot-XVj" id="Bg4-Hy-GxH"/>
+                <outlet property="positiveLbl" destination="Web-22-dfS" id="S3c-fe-fjk"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="226"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="DoF-mR-aNa" customClass="MyLabel" customModule="PassengerApp" customModuleProvider="target">
+                    <rect key="frame" x="10" y="15" width="355" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="ziE-iP-rNF"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="fontFamilyWeight" value="Medium"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="dXf-lS-LcQ">
+                    <rect key="frame" x="10" y="55" width="355" height="120"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tEZ-Ot-XVj">
+                            <rect key="frame" x="0.0" y="0.0" width="355" height="50"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="jyO-zM-ovs" customClass="MyLabel" customModule="PassengerApp" customModuleProvider="target">
+                                    <rect key="frame" x="10" y="15" width="294" height="20.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_arrow_right" translatesAutoresizingMaskIntoConstraints="NO" id="wbQ-X0-UsZ">
+                                    <rect key="frame" x="305" y="2.5" width="45" height="45"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="45" id="0M8-3O-IrH"/>
+                                        <constraint firstAttribute="width" constant="45" id="8U7-fg-UEg"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="wbQ-X0-UsZ" secondAttribute="trailing" constant="5" id="7Lw-ft-Hea"/>
+                                <constraint firstAttribute="height" constant="50" id="9gk-Ll-0hb"/>
+                                <constraint firstItem="wbQ-X0-UsZ" firstAttribute="leading" secondItem="jyO-zM-ovs" secondAttribute="trailing" constant="1" id="RNs-Og-zhS"/>
+                                <constraint firstItem="jyO-zM-ovs" firstAttribute="centerY" secondItem="tEZ-Ot-XVj" secondAttribute="centerY" id="TXT-1L-IbE"/>
+                                <constraint firstItem="jyO-zM-ovs" firstAttribute="leading" secondItem="tEZ-Ot-XVj" secondAttribute="leading" constant="10" id="gcp-Vn-I7s"/>
+                                <constraint firstItem="wbQ-X0-UsZ" firstAttribute="centerY" secondItem="tEZ-Ot-XVj" secondAttribute="centerY" id="zOC-sq-st1"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oK5-uy-Mcs" customClass="MyTextField" customModule="PassengerApp" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="60" width="355" height="60"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="vqI-1c-U2d"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aTJ-VR-hKa">
+                    <rect key="frame" x="10" y="185" width="355" height="30"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Web-22-dfS" customClass="MyLabel" customModule="PassengerApp" customModuleProvider="target">
+                            <rect key="frame" x="303" y="5" width="42" height="20"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="paddingRight">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="string" keyPath="fontFamilyWeight" value="Medium"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xrh-fD-ZKt" customClass="MyLabel" customModule="PassengerApp" customModuleProvider="target">
+                            <rect key="frame" x="251" y="5" width="42" height="20"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="paddingRight">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="string" keyPath="fontFamilyWeight" value="Medium"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="1if-FV-wXS"/>
+                        <constraint firstItem="xrh-fD-ZKt" firstAttribute="top" secondItem="aTJ-VR-hKa" secondAttribute="top" constant="5" id="UYP-KQ-6xn"/>
+                        <constraint firstAttribute="bottom" secondItem="Web-22-dfS" secondAttribute="bottom" constant="5" id="cHr-rD-Dfc"/>
+                        <constraint firstAttribute="bottom" secondItem="xrh-fD-ZKt" secondAttribute="bottom" constant="5" id="gb3-kf-cwx"/>
+                        <constraint firstItem="Web-22-dfS" firstAttribute="top" secondItem="aTJ-VR-hKa" secondAttribute="top" constant="5" id="icF-l4-Ob2"/>
+                        <constraint firstAttribute="trailing" secondItem="Web-22-dfS" secondAttribute="trailing" constant="10" id="u7T-Hu-MBI"/>
+                        <constraint firstItem="Web-22-dfS" firstAttribute="leading" secondItem="xrh-fD-ZKt" secondAttribute="trailing" constant="10" id="vfw-8F-A4P"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="dXf-lS-LcQ" firstAttribute="top" secondItem="DoF-mR-aNa" secondAttribute="bottom" constant="10" id="0ke-cz-HTE"/>
+                <constraint firstAttribute="trailing" secondItem="DoF-mR-aNa" secondAttribute="trailing" constant="10" id="1Az-5X-wge"/>
+                <constraint firstItem="dXf-lS-LcQ" firstAttribute="leading" secondItem="DoF-mR-aNa" secondAttribute="leading" id="Afe-wV-Hi9"/>
+                <constraint firstItem="dXf-lS-LcQ" firstAttribute="trailing" secondItem="DoF-mR-aNa" secondAttribute="trailing" id="Drn-Fi-GMV"/>
+                <constraint firstItem="aTJ-VR-hKa" firstAttribute="trailing" secondItem="DoF-mR-aNa" secondAttribute="trailing" id="SPY-LF-UTV"/>
+                <constraint firstItem="aTJ-VR-hKa" firstAttribute="top" secondItem="dXf-lS-LcQ" secondAttribute="bottom" constant="10" id="XwZ-IM-JfA"/>
+                <constraint firstItem="DoF-mR-aNa" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="bDh-Pr-JRD"/>
+                <constraint firstItem="aTJ-VR-hKa" firstAttribute="leading" secondItem="DoF-mR-aNa" secondAttribute="leading" id="lS7-dU-Xco"/>
+                <constraint firstItem="DoF-mR-aNa" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="lgM-eb-EEX"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="24.5" y="50"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_arrow_right" width="50" height="50"/>
+    </resources>
+</document>
